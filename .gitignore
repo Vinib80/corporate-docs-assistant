@@ -1,0 +1,8 @@
+# diretório de testes
+tests/
+
+# Ambientes virtuais Python
+.venv/
+venv/
+env/
+
