@@ -11,3 +11,5 @@ projeto-docs/
 *.pyc
 
 .pystest_cache/
+
+GEMINI.md
