@@ -1,8 +1,15 @@
 import sqlite3
 
-conexao = sqlite3.connect('database.db')
+def init_db():
+    conn = sqlite3.connect("database.db")
 
-# Criando um cursor para executar comandos SQL
-cursor = conexao.cursor()
-
-conexao.close()
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS logs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            pergunta TEXT,
+            resposta TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+    conn.commit()
+    conn.close()
