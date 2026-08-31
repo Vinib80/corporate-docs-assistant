@@ -1,11 +1,3 @@
-"""
-Módulo de geração de respostas usando o Gemini 2.5 Flash.
-
-Responsabilidade única: receber a pergunta do usuário e os chunks
-recuperados do ChromaDB, montar um prompt contextualizado e retornar
-a resposta gerada pelo LLM junto com as fontes citadas.
-"""
-
 import os
 
 from dotenv import load_dotenv
@@ -43,18 +35,7 @@ def _formatar_contexto(chunks: list[dict]) -> str:
 
 
 def gerar_resposta(pergunta: str, chunks: list[dict]) -> dict:
-    """Gera a resposta final usando o Gemini 2.5 Flash com base nos chunks recuperados.
-
-    Args:
-        pergunta: A pergunta do usuário em linguagem natural.
-        chunks:   Lista de dicts com chaves 'texto', 'fonte' e 'distancia',
-                  retornada por vector_store.buscar_similares().
-
-    Returns:
-        Dict com:
-            - 'resposta': texto gerado pelo modelo.
-            - 'fontes': lista deduplicated dos nomes de arquivo citados.
-    """
+    
     contexto = _formatar_contexto(chunks)
 
     prompt_usuario = (
