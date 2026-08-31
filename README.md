@@ -92,6 +92,7 @@ corporate-docs-assistant/
 ├── scripts/
 │   └── ingest.py            # Script de ingestão: indexa /data no ChromaDB
 ├── tests/                   # Testes automatizados
+├── chroma_db/               # Persistência local do banco vetorial (gerado automaticamente)
 ├── requirements.txt
 ├── .env.example
 └── README.md
