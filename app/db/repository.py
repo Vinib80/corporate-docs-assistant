@@ -1,7 +1,7 @@
 import json
 import sqlite3
 
-from database import get_connection, init_db
+from app.db.database import get_connection, init_db
 
 
 def salvar_log(pergunta: str, resposta: str, fontes: list[str]) -> int:

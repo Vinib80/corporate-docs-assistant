@@ -1,20 +1,3 @@
-"""
-Script de ingestão: popula o ChromaDB com os embeddings de todos os
-documentos corporativos da pasta data/.
-
-Fluxo por documento:
-    1. chunk_por_paragrafo()  → divide o texto em trechos com overlap
-    2. gerar_embedding()      → converte cada trecho em vetor (Gemini API)
-    3. adicionar_chunks()     → persiste vetores + metadados no ChromaDB
-
-Como executar:
-    source .venv/bin/activate
-    python scripts/ingest.py
-
-O script é idempotente: pode ser rodado mais de uma vez sem duplicar dados,
-pois usa upsert internamente (chunks com o mesmo id são sobrescritos).
-"""
-
 import sys
 import time
 from pathlib import Path
@@ -32,14 +15,7 @@ DATA_DIR = ROOT / "data"
 
 
 def ingerir_documento(caminho: Path) -> int:
-    """Chunka, embeda e indexa um único documento (.md ou .txt).
 
-    Args:
-        caminho: Caminho absoluto para o arquivo de documento.
-
-    Returns:
-        Quantidade de chunks indexados para este documento.
-    """
     nome_arquivo = caminho.name
     chunks = chunk_por_paragrafo(str(caminho))
 
