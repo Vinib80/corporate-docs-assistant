@@ -15,3 +15,7 @@ projeto-docs/
 GEMINI.md
 
 corporate_docs.db
+
+.env
+
+chroma_db/
