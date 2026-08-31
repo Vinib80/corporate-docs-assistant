@@ -1,0 +1,30 @@
+MANUAL DE SEGURANÇA DA INFORMAÇÃO
+
+1. OBJETIVO
+Este manual estabelece as diretrizes e regras para o uso seguro dos recursos tecnológicos da empresa, visando proteger a confidencialidade, integridade e disponibilidade das informações corporativas.
+
+2. POLÍTICA DE SENHAS
+- Complexidade: As senhas devem conter no mínimo 12 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.
+- Troca periódica: As senhas de rede e sistemas corporativos devem ser alteradas obrigatoriamente a cada 90 dias.
+- Proibições: É estritamente proibido compartilhar senhas com colegas, anotá-las em papéis ou utilizá-las em serviços pessoais externos.
+
+3. USO DE DISPOSITIVOS CORPORATIVOS
+- Os notebooks e smartphones fornecidos pela empresa são de uso exclusivamente profissional.
+- A instalação de softwares não homologados pela área de TI é proibida. 
+- Dispositivos USB (pendrives, HDs externos) não autorizados são bloqueados automaticamente pelas políticas de segurança.
+
+4. SEGURANÇA NO TRABALHO REMOTO (HOME OFFICE)
+- O acesso aos sistemas internos fora das dependências físicas da empresa deve ser feito obrigatoriamente através da VPN corporativa.
+- Em locais públicos, o colaborador não deve utilizar redes Wi-Fi abertas sem o uso da VPN.
+
+5. PREVENÇÃO CONTRA PHISHING E MALWARES
+- Desconfie de e-mails de remetentes desconhecidos que solicitam senhas, dados bancários ou urgência em pagamentos.
+- Nunca clique em links suspeitos ou faça download de anexos inesperados.
+- Ao identificar um e-mail suspeito, reporte imediatamente utilizando o botão "Reportar Phishing" no e-mail.
+
+6. POLÍTICA DE MESA LIMPA (CLEAN DESK)
+- Documentos físicos contendo informações sensíveis não devem ser deixados sobre as mesas ao final do expediente.
+- Os computadores devem ser bloqueados (atalho Windows + L) sempre que o colaborador se ausentar de sua estação.
+
+7. RELATO DE INCIDENTES
+Qualquer perda de equipamento corporativo ou suspeita de vazamento de dados deve ser comunicada imediatamente ao Centro de Operações de Segurança (SOC).
